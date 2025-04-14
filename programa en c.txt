@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+#define MAX 300;
+int main()
+{
+   char letra;
+   char texto[MAX];
+   int i = 0;
+   while(1){
+   printf("ingresar un texto! ");
+   letra = getchar();
+   
+   if(letra != '\n') break;
+       
+    texto[i] = letra;
+    i++;
+       
+   
+   } 
+   texto[i] = '\0';
+   
+   printf("texto ingresado %s", texto);
+   
+    return 0;
+}
